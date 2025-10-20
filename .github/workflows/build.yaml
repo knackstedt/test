@@ -1,4 +1,9 @@
 name: Build & Publish Agent to GHCR
+on:
+  # TODO: branch based deployment
+  push:
+    paths:
+    - '**/*'
 permissions:
   contents: read
   packages: write
